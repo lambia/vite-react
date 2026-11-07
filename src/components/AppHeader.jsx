@@ -1,12 +1,18 @@
 function AppHeader() {
 
-	const payoff = "Molisana, pasta sana!";
+	const slogan = "Molisana, pasta sana!";
+
+	const stile = {
+		// "background-color": "crimson",
+		// backgroundColor: "crimson",
+		padding: "1rem"
+	};
 
 	return (
 		<header>
 			<figure>
 				<img src="/logo.png" alt="Logo" />
-				<p>{payoff}</p>
+				<p className="prova" style={stile}>{slogan}</p>
 			</figure>
 			<nav>
 				<ul>

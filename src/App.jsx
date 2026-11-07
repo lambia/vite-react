@@ -4,11 +4,11 @@ import AppFooter from "./components/AppFooter"
 
 function App() {
 	return (
-		<>
+		<React.Fragment>
 			<AppHeader />
 			<AppMain />
 			<AppFooter />
-		</>
+		</React.Fragment>
 	)
 }
 

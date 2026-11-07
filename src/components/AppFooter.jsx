@@ -1,12 +1,11 @@
+import Logo from "./Logo";
+
 function AppFooter() {
 	return (
 		<footer className="container">
 			<nav className="footer-nav">
 				<div className="footer-col">
-					<figure>
-						<img src="/logo.png" alt="Logo" />
-						<p>Molisana, pasta sana!</p>
-					</figure>
+					<Logo />
 				</div>
 				<div className="footer-col">
 					<div>

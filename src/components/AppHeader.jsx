@@ -1,19 +1,9 @@
+import Logo from "./Logo";
+
 function AppHeader() {
-
-	const slogan = "Molisana, pasta sana!";
-
-	const stile = {
-		// "background-color": "crimson",
-		// backgroundColor: "crimson",
-		padding: "1rem"
-	};
-
 	return (
 		<header>
-			<figure>
-				<img src="/logo.png" alt="Logo" />
-				<p className="prova" style={stile}>{slogan}</p>
-			</figure>
+			<Logo />
 			<nav>
 				<ul>
 					<li>

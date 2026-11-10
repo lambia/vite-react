@@ -1,6 +1,6 @@
-function Logo() {
+//il componente richiede una props "slogan"
 
-	const slogan = "Molisana, pasta sana!";
+function Logo(props) {
 
 	const stile = {
 		// "background-color": "crimson",
@@ -8,10 +8,14 @@ function Logo() {
 		padding: "1rem"
 	};
 
+	const slogan = props.slogan;
+	const sottotesto = props.sottotesto;
+
 	return (
 		<figure>
 			<img src="/logo.png" alt="Logo" />
 			<p className="prova" style={stile}>{slogan}</p>
+			<p>{sottotesto}</p>
 		</figure>
 	)
 }

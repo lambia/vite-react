@@ -10,7 +10,7 @@ function AppHeader() {
 
 	return (
 		<header>
-			<Logo />
+			<Logo slogan="titolone" sottotesto="descrizione in corsivo" />
 			<nav>
 				<ul>
 					{links}

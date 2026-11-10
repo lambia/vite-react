@@ -34,7 +34,7 @@ function AppFooter() {
 		<footer className="container">
 			<nav className="footer-nav">
 				<div className="footer-col">
-					<Logo />
+					<Logo slogan="altro" />
 				</div>
 				<div className="footer-col">
 					<div>

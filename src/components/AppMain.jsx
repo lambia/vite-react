@@ -1,3 +1,5 @@
+import ProductCard from "@/components/ProductCard"
+
 function AppMain() {
 
 	const products = [
@@ -87,17 +89,37 @@ function AppMain() {
 		},
 	];
 
+	const pastaNonEsistente = {
+		title: "pasta spaziale",
+		src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqqFX2GQg8wxYqx5mJE367ILhfqDzXcZWLqvgMOxUtiFZdAwVVDCA2XuW&s=10"
+	};
+
 	return (
 		<main>
 			<section id="products">
+
+				<h2>Best Sellers</h2>
+				<div className="container card-container">
+
+					<ProductCard item={pastaNonEsistente} />
+					<ProductCard item={products[0]} />
+					<ProductCard item={products[1]} />
+					<ProductCard item={products[5]} />
+
+				</div>
+
 				<h2>Lista prodotti</h2>
 				<div className="container card-container">
 
+					<ProductCard item={products[0]} />
+					<ProductCard item={products[1]} />
+					<ProductCard item={products[2]} />
+					<ProductCard item={products[3]} />
+					<ProductCard item={products[4]} />
+
+
 					{products.map(prodotto =>
-						<div key={prodotto.id} className="prod-card">
-							<img src={prodotto.src} alt={prodotto.title} />
-							<h3>{prodotto.title}</h3>
-						</div>
+						<ProductCard key={prodotto.id} item={prodotto} />
 					)}
 
 				</div>

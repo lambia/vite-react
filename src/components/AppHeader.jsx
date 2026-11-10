@@ -1,5 +1,6 @@
 import Logo from "./Logo";
-import linksObjects from "../data/header.links"
+// import linksObjects from "../data/header.links" // <--- se non avete alias "@" configurato
+import linksObjects from "@/data/header.links"
 
 function AppHeader() {
 

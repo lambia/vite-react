@@ -89,11 +89,6 @@ function AppMain() {
 		},
 	];
 
-	const pastaNonEsistente = {
-		title: "pasta spaziale",
-		src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqqFX2GQg8wxYqx5mJE367ILhfqDzXcZWLqvgMOxUtiFZdAwVVDCA2XuW&s=10"
-	};
-
 	return (
 		<main>
 			<section id="products">
@@ -101,25 +96,18 @@ function AppMain() {
 				<h2>Best Sellers</h2>
 				<div className="container card-container">
 
-					<ProductCard item={pastaNonEsistente} />
-					<ProductCard item={products[0]} />
-					<ProductCard item={products[1]} />
-					<ProductCard item={products[5]} />
+					<ProductCard nome="Linguine" img="https://picsum.photos/300?r=1" />
+					<ProductCard nome="Spaghetti" img="https://picsum.photos/300?r=2" />
+					<ProductCard nome="Bucatini" img="https://picsum.photos/300?r=3" />
+					<ProductCard nome="Pasta mista" img="https://picsum.photos/300?r=4" />
 
 				</div>
 
 				<h2>Lista prodotti</h2>
 				<div className="container card-container">
 
-					<ProductCard item={products[0]} />
-					<ProductCard item={products[1]} />
-					<ProductCard item={products[2]} />
-					<ProductCard item={products[3]} />
-					<ProductCard item={products[4]} />
-
-
 					{products.map(prodotto =>
-						<ProductCard key={prodotto.id} item={prodotto} />
+						<ProductCard key={prodotto.id} nome={prodotto.title} img={prodotto.src} />
 					)}
 
 				</div>

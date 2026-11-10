@@ -2,11 +2,12 @@ function ProductCard(props) {
 
 	// console.log("Prodotto ricevuto: ", props.item);
 
-	const prodotto = props.item; //item è {} con title e src
+	const nome = props.nome; //stringa
+	const img = props.img; //stringa
 
 	return <div className="prod-card">
-		<img src={prodotto.src} alt={prodotto.title} />
-		<h3>{prodotto.title}</h3>
+		<img src={img} alt={nome} />
+		<h3>{nome}</h3>
 	</div>
 }
 

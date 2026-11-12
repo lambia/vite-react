@@ -5,7 +5,10 @@ import linksObjects from "@/data/header.links"
 function AppHeader() {
 
 	const links = linksObjects.map(elemento => {
-		return <li key={elemento.id}><a href={elemento.url}>{elemento.text}</a></li>
+
+		const classi = elemento.isActive ? "active" : "";
+
+		return <li key={elemento.id}><a href={elemento.url} className={classi}>{elemento.text}</a></li>
 	});
 
 	return (

@@ -6,7 +6,14 @@ function AppHeader() {
 
 	const links = linksObjects.map(elemento => {
 
-		const classi = elemento.isActive ? "active" : "";
+		let classi = "";
+
+		if (elemento.isActive) {
+			classi = "active";
+		}
+
+		// const classi = elemento.isActive && "active";
+		// const classi = elemento.isActive ? "active" : "";
 
 		return <li key={elemento.id}><a href={elemento.url} className={classi}>{elemento.text}</a></li>
 	});

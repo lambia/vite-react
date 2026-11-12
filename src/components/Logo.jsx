@@ -15,6 +15,13 @@ function Logo(props) {
 
 	const messaggioAlternativo = "Testo mancante"
 
+	// let elementoInBasso = null;
+	// if (sottotesto) {
+	// 	elementoInBasso = <p>{sottotesto}</p>
+	// } else {
+	// 	elementoInBasso = <p>{messaggioAlternativo}</p>
+	// }
+
 	return (
 		<figure>
 			<img src="/logo.png" alt="Logo" />
@@ -28,6 +35,8 @@ function Logo(props) {
 				{/* {sottotesto ? sottotesto : messaggioAlternativo} */}
 				{sottotesto || messaggioAlternativo}
 			</p>
+
+			{/* {elementoInBasso} */}
 
 		</figure>
 	)

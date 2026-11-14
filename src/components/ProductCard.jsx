@@ -14,6 +14,12 @@ function ProductCard({ nome, img, type, time }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	function expandCard() {
+		// if (isOpen) {
+		// 	setIsOpen(false);
+		// } else {
+		// 	setIsOpen(true);
+		// }
+
 		setIsOpen(!isOpen);
 	}
 

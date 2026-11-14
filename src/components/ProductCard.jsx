@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function ProductCard({ nome, img, type, time }) {
 
 	// console.log("Prodotto ricevuto: ");
@@ -9,10 +11,16 @@ function ProductCard({ nome, img, type, time }) {
 
 	// const { nome, img, type, time } = props;
 
+	const [isOpen, setIsOpen] = useState(false);
+
+	function expandCard() {
+		setIsOpen(!isOpen);
+	}
+
 	return <div className="prod-card">
-		<img src={img} alt={nome} />
+		<img onClick={expandCard} src={img} alt={nome} />
 		<h3>{nome}</h3>
-		{(type && time) ? <p>Pasta {type} - Cottura {time} minuti</p> : <p>Non ci sono informazioni disponibili</p>}
+		{isOpen ? <p>Pasta {type} - Cottura {time} minuti</p> : null}
 	</div>
 }
 

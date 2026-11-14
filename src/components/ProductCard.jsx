@@ -1,4 +1,4 @@
-function ProductCard({ nome, img, type, time, cosaFare }) {
+function ProductCard({ nome, img, type, time }) {
 
 	// console.log("Prodotto ricevuto: ");
 

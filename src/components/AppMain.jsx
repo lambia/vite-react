@@ -107,7 +107,7 @@ function AppMain() {
 				<div className="container card-container">
 
 					{products.map(prodotto =>
-						<ProductCard key={prodotto.id} nome={prodotto.title} img={prodotto.src} />
+						<ProductCard key={prodotto.id} nome={prodotto.title} img={prodotto.src} type={prodotto.type} time={prodotto.time} />
 					)}
 
 				</div>

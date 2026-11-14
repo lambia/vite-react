@@ -13,6 +13,13 @@ function ProductCard({ nome, img, type, time }) {
 
 	const [isOpen, setIsOpen] = useState(false);
 
+	// let descrizione = "Dati non disponibili";
+	// if (type && time) {
+	// 	descrizione = `Pasta ${type} - Cottura ${time} minuti`;
+	// }
+
+	const descrizione = (type && time) ? `Pasta ${type} - Cottura ${time} minuti` : "Dati non disponibili";
+
 	function expandCard() {
 		// if (isOpen) {
 		// 	setIsOpen(false);
@@ -26,7 +33,7 @@ function ProductCard({ nome, img, type, time }) {
 	return <div className="prod-card">
 		<img onClick={expandCard} src={img} alt={nome} />
 		<h3>{nome}</h3>
-		{isOpen ? <p>Pasta {type} - Cottura {time} minuti</p> : null}
+		{isOpen ? <p>{descrizione}</p> : null}
 	</div>
 }
 

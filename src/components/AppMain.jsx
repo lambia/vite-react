@@ -96,10 +96,10 @@ function AppMain() {
 				<h2>Best Sellers</h2>
 				<div className="container card-container">
 
-					<ProductCard nome="Linguine" img="https://picsum.photos/300?r=1" />
-					<ProductCard nome="Spaghetti" img="https://picsum.photos/300?r=2" />
-					<ProductCard nome="Bucatini" img="https://picsum.photos/300?r=3" />
-					<ProductCard nome="Pasta mista" img="https://picsum.photos/300?r=4" />
+					<ProductCard nome="Linguine" />
+					<ProductCard nome="Spaghetti" />
+					<ProductCard nome="Bucatini" />
+					<ProductCard nome="Pasta mista" />
 
 				</div>
 
